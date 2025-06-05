@@ -3,7 +3,8 @@ import { general } from "../data/navigationlinks";
 import {tools} from "../data/navigationlinks";
 import { setting } from "../data/navigationlinks";
 export const Sidebar = () => {
-  <aside>
+  return(
+    <aside>
     <div className="sidebar">
       <h4>General</h4>
       <ul>
@@ -26,4 +27,5 @@ export const Sidebar = () => {
       ))}
     </ul>
   </aside>
+  )
 }
