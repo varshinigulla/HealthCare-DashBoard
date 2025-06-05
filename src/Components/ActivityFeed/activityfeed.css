@@ -1,0 +1,69 @@
+.activity-container {
+  background-color: whitesmoke;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  margin:5px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary {
+  font-size: 0.9rem;
+  color: gray;
+}
+.activity-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+.bar-container {
+  display: flex;
+  flex-direction: column;
+}
+.rate{
+  display:flex;
+  column-gap: 5px;
+}
+.bar {
+  width: 4px;
+  background-color:rgb(176, 176, 176);
+  border-radius: 4px;
+  margin-bottom:6px;
+}
+.color1{
+  background-color:rgb(205, 5, 245);
+}
+.color2{
+  background-color:rgb(99, 252, 252);
+}
+.bar-label {
+  margin-top: 85px;
+  font-size: 0.75rem;
+  color: gray;
+  padding:1px 5px;
+}
+
+/* media Quires Mobile Styles */
+@media (max-width: 480px) {
+  .activity-container{
+    max-width:360px;
+  }
+  .activity-header {
+    display: flex;
+    align-items: center;
+    column-gap:30px;
+  }
+  .bar-container {
+    column-gap:4px;
+  }
+  .rate{
+    display:flex;
+    column-gap: 4px;
+  }
+}
+

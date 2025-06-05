@@ -1,0 +1,50 @@
+.dashboard{
+    display:flex;
+    flex-direction:row;
+    flex:auto;
+    align-items: baseline;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-evenly;
+}
+.health-details{
+    display:flex;
+    flex-direction:column;
+}
+.appointment-details{
+    display:flex;
+    flex-direction: column;
+}
+
+/* media queries laptop Styles */
+@media (max-width: 1024px) {
+    .dashboard{
+        margin-top: 5px;
+    }
+    .health-details{
+        max-width:430px;
+    }
+    .appointment-details{
+        max-width:400px;
+    }
+}
+
+/* media queries tablet Styles */
+@media (max-width: 768px) {
+    .dashboard{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding-top: 6px;
+    }
+}
+
+/* media queries mobile Styles */
+@media (max-width: 480px) {
+    .dashboard{
+        display:flex;
+        flex-direction:column;
+    }
+    .appointment-details{
+        margin-left:-100px;
+    }
+}

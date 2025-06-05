@@ -1,0 +1,45 @@
+.card {
+  background-color:white;
+  width:190px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  margin:0px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-icon {
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding:0px 5px;
+}
+.icon {
+  width: 26px;
+  height: 18px;
+  padding-left:5px;
+}
+.time {
+  margin: 0;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+/* media queries laptop Styles */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 0.76rem;
+    padding:0px 2px;
+  }
+  .icon {
+    width: 26px;
+    height: 18px;
+    padding-left:2px;
+  }
+}

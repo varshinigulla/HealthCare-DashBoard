@@ -1,0 +1,13 @@
+.upcomingSchedule h4{
+  text-align: start;
+}
+.upcomingSchedule h5{
+  color:gray;
+  font-weight: 500;
+  text-align: start;
+}
+.scheduleList {
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+}

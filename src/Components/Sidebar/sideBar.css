@@ -1,0 +1,80 @@
+.sidebar h4{
+    color:gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: start;
+    padding-left: 30px;
+    padding-top: 8px;
+}
+.navlink{
+    list-style-type: none;
+    display:flex;
+    align-items: start;
+    column-gap: 25px;
+    padding:10px;
+    font-size: 1rem;
+}
+.navlink.active{
+    color:rgb(78, 78, 78);
+}
+.link-icon{
+    font-size: 1.3rem;
+}
+.setting{
+    padding-top: 90%;
+}
+
+/* media queries laptop Styles */
+@media (max-width: 1024px) {
+    .sidebar h4 {
+        font-size: 1.1rem;
+        padding-left: 20px;
+    }
+    .navlink {
+        column-gap: 20px;
+        font-size: 0.95rem;
+    }
+    .link-icon {
+        font-size: 1.2rem;
+    }
+    .setting {
+        padding-top: 90%;
+    }
+}
+
+/* media queries tablet Styles */
+@media (max-width: 768px) {
+    .sidebar h4 {
+        font-size: 1rem;
+        padding-left: 15px;
+    }
+    .navlink {
+        font-size: 1rem;
+    }
+    .link-icon {
+        font-size: 1.2rem;
+    }
+    .setting{
+        padding-top: 10px;
+    }
+}
+
+/* media queries Mobile Styles */
+@media (max-width: 480px) {
+    .sidebar h4 {
+        font-size: 0.9rem;
+        padding-top: 8px;
+    }
+    .navlink {
+        font-size: 0.75rem;
+        margin-left: -20px;
+        column-gap: 15px;
+        padding:4px;
+    }
+    .link-icon {
+        font-size: 0.9rem;
+    }
+    .setting{
+        padding-top: 5px;
+    }
+}
