@@ -12,7 +12,7 @@ export const HealthStatus = () => {
       </div>
       <div className="health-section">
         <section className="anatomy-section">
-          <img src="/Assests/Anatomy.jpg" alt="Anatomy" className="anatomy-img" />
+          <img src={`${process.env.PUBLIC_URL}/Assests/Anatomy.jpg`} alt="Anatomy" className="anatomy-img" />
           {healthData.map(part => (
             <div key={part.id} className="anatomy-indicator" style={{ ...part.position,backgroundColor: part.color}}>
               <img src={part.icon} alt="parts" className="part"/>

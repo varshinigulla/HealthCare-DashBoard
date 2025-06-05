@@ -5,7 +5,7 @@ export const healthData = [
         status: "Healthy", 
         color: "purple", 
         date : "22 May 2025",
-        icon : "/Assests/heart.webp",
+        icon : `${process.env.PUBLIC_URL}/Assests/heart.webp`,
         position: { top: "25%", left: "55%" }
     },
     { 
@@ -14,7 +14,7 @@ export const healthData = [
         status: "Issue", 
         color: "green", 
         date : "24 May 2025",
-        icon : "/Assests/lungs.jpg",
+        icon : `${process.env.PUBLIC_URL}/Assests/lungs.jpg`,
         position: { top: "35%", left: "43%" }
     },
     { 
@@ -23,7 +23,7 @@ export const healthData = [
         status: "Healthy", 
         color: "brown", 
         date : "25 May 2025",
-        icon : "/Assests/teeth.jpg",
+        icon : `${process.env.PUBLIC_URL}/Assests/teeth.jpg`,
         position: { top: "15%", left: "52%" }
     },
     { 
@@ -32,7 +32,7 @@ export const healthData = [
         status: "Healthy", 
         color: "orange", 
         date : "26 May 2025",
-        icon : "/Assests/bone.jpg",
+        icon : `${process.env.PUBLIC_URL}/Assests/bone.jpg`,
         position: { top: "66%", left: "26%" }
     }
 ];

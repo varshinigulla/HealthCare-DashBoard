@@ -5,12 +5,12 @@ export const schedule = [
       { 
         title: "Health checkup complete",
         time: "10:00 AM", 
-        icon: "/Assests/injection.jpg" 
+        icon: `${process.env.PUBLIC_URL}/Assests/injection.jpg` 
       },
       { 
         title: "Ophthalmologist", 
         time: "12:00 PM", 
-        icon: "/Assests/eye.png" 
+        icon: `${process.env.PUBLIC_URL}/Assests/eye.png` 
       }
     ]
   },
@@ -20,12 +20,12 @@ export const schedule = [
       { 
         title: "Cardiologist", 
         time: "02:00 PM", 
-        icon: "/Assests/heart.webp" 
+        icon: `${process.env.PUBLIC_URL}/Assests/heart.webp` 
       },
       { 
         title: "Neurologist", 
         time: "04:00 PM", 
-        icon: "/Assests/brain.png" 
+        icon: `${process.env.PUBLIC_URL}/Assests/brain.png` 
       }
     ]
   }

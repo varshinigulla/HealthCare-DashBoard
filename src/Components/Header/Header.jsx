@@ -19,7 +19,7 @@ export const Header = () => {
             </div>
 
             <div className="icons">
-                <img src="/Assests/user.webp" alt="user" className="user" />
+                <img src={`${process.env.PUBLIC_URL}/Assests/user.webp`} alt="user" className="user" />
                 <IoIosAdd className="add-button" />
             </div>
         </div>
