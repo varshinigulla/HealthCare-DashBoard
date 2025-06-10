@@ -31,13 +31,13 @@ export const Calendar = () => {
       </div>
       <div className="appointment">
         {appointments.details.map((app) => (
-          <div key={app.id} className={appointment===app.id?"appointment-card app-bg-color":"appointment-card"} onClick={() => setAppointment(app.id)}>
+          <div key={app.id} className={appointment===app.id?"app-bg-color appointment-card":"appointment-card"} onClick={() => setAppointment(app.id)}>
             <div className="appointment-title">
-              <h5>{app.title}</h5>
+              <span className={appointment===app.id?"appo-title":"app-title"}>{app.title}</span>
               <img src={app.icon} alt={`${app.title} icon`} />
             </div>
-            <p>{app.time}</p>
-            <h6>{app.name}</h6>
+            <p className={appointment===app.id?"appo-time":"app-time"}>{app.time}</p>
+            <h6 className={appointment===app.id?"appo-name":"app-name"}>{app.name}</h6>
           </div>
         ))}
       </div>  

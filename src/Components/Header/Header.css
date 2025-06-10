@@ -30,9 +30,10 @@
   width: 350px;
   background-color: white;
   outline:none;
-}.notification{
+}
+.notification{
   font-size: 1.2rem;
-  color:gray;
+  color:rgb(117, 1, 211);
 }
 .icons {
   display: flex;
@@ -41,7 +42,7 @@
 }
 .user {
   width: 40px;
-  height: 35px;
+  height: 36px;
   border-radius: 10px;
   background-color: aqua;
 }
@@ -53,6 +54,7 @@
   color: white;
   border: none;
   border-radius: 10px;
+  font-weight:bold;
 }
 
 /* media Quires laptop Styles */

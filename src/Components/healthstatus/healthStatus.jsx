@@ -7,7 +7,7 @@ export const HealthStatus = () => {
   return (
     <div className="healthStatus">
       <div className="heading">
-        <h4>DashBoard</h4>
+        <h3>DashBoard</h3>
         <pre>This Week <FaArrowRightLong/></pre>
       </div>
       <div className="health-section">
@@ -15,7 +15,7 @@ export const HealthStatus = () => {
           <img src={`${process.env.PUBLIC_URL}/Assests/Anatomy.jpg`} alt="Anatomy" className="anatomy-img" />
           {healthData.map(part => (
             <div key={part.id} className="anatomy-indicator" style={{ ...part.position,backgroundColor: part.color}}>
-              <img src={part.icon} alt="parts" className="part"/>
+              <img src={part.icon} alt={`${part.title} icon`} className="part"/>
               <pre>{ part.status} {part.title}</pre>
             </div>
           ))}
@@ -24,11 +24,14 @@ export const HealthStatus = () => {
           {healthData.map(card => (
             <div key={card.id} className="cards">
               <div className="parts">
-                <img src={card.icon} alt="parts" className="card-icon" />
-                <h4> {card.title}</h4>
+                <img src={card.icon} alt={`${card.title} icon`} className="card-icon" />
+                <span className="card-title"> {card.title}</span>
               </div>
               <p>Date : {card.date}</p>
-              <div className="rate" style={{backgroundColor: card.color}}></div>
+              <div className="rates">
+                <pre className="s-rate"></pre>
+                <pre className="rate" style={{backgroundColor: card.color}}></pre>
+              </div>
             </div>
           ))}
           <pre>Details <FaArrowRightLong/></pre>

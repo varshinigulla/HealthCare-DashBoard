@@ -46,6 +46,7 @@
 .part{
   height:15px;
   width:15px;
+  object-fit: cover;
 }
 .health-status{
   padding-top:25px;
@@ -55,8 +56,8 @@
   flex-direction: column;
   align-items:center;
   column-gap:10px;
-  background-color: white;
-  margin: 5px;
+  background-color: whitesmoke;
+  margin: 5px 5px 10px 5px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(179, 64, 64, 0.1);
 }
@@ -64,32 +65,41 @@
   display:flex;
   align-items: center;
   column-gap: 20px;
+  margin-top: 10px;
 }
 .card-icon{
-  height:20px;
-  max-width: 20px;
+  height:40px;
+  max-width: 40px;
+}
+.card-title{
+  font-size: 1rem;
+  font-weight:bold;
 }
 .cards p{
+  display:flex;
+  align-items: start;
   color:gray;
-  font-size: 0.7rem;
-  margin-top: -10px;
+  font-size: 0.65rem;
+  margin-top: -2px;
 }
-.rate{
-  position:relative;
-  width:80%;
+.rates{
+  width:50px;
+  margin-left: -115px;
+}
+.s-rate{
+  width:25px;
   height:6px;
   border-radius: 10px;
   margin:0px 20px 5px;
+  background-color:rgb(194, 193, 193);
 }
-.rate::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 25%;
-  background-color: whitesmoke;
-  border-radius: 5px;
+.rate{
+  display:flex;
+  align-items: start;
+  height:6px;
+  border-radius: 10px;
+  margin:0px 20px 5px;
+  margin-top: -11px;
 }
 .health-status pre{
   color:gray;
