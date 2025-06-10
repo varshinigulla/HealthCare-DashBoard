@@ -1,9 +1,14 @@
 import { appointments } from "../data/appointments";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { useState } from "react";
 import "./Calendar.css"
 
 export const Calendar = () => {
+
+
+  const [times,setTime] = useState(null);
+  const [appointment,setAppointment] = useState(1);
 
   return (
     <div className="calendar-details">
@@ -13,10 +18,10 @@ export const Calendar = () => {
           {appointments.slots.map((data,index) => (
             <div key={index} className="slots">
               <span className="slots-day">{data.day}</span>
-              <h3 className="slots-date">{data.date}</h3>
+              <h3>{data.date}</h3>
               {
-                data.time.map((time,i) => (
-                  <p className="slots-time">{time}</p>
+                data.time.map(time => (
+                  <p className={times===time?"slot-time":"slots-time"} onClick={() => setTime(time)}>{time}</p>
                 ))
               }
             </div>
@@ -25,8 +30,8 @@ export const Calendar = () => {
         </div>
       </div>
       <div className="appointment">
-        {appointments.details.map((app, i) => (
-          <div className="appointment-card">
+        {appointments.details.map((app) => (
+          <div key={app.id} className={appointment===app.id?"appointment-card app-bg-color":"appointment-card"} onClick={() => setAppointment(app.id)}>
             <div className="appointment-title">
               <h5>{app.title}</h5>
               <img src={app.icon} alt={`${app.title} icon`} />

@@ -13,9 +13,11 @@
     column-gap: 25px;
     padding:10px;
     font-size: 1rem;
+    color:rgb(49, 49, 49);
 }
-.navlink.active{
-    color:rgb(78, 78, 78);
+.active{
+    color:black;
+    font-weight: 600;
 }
 .link-icon{
     font-size: 1.3rem;

@@ -29,6 +29,13 @@
   color:gray;
   font-weight: 400;
 }
+.slot-time{
+  padding:3px 10px;
+  background-color: darkmagenta;
+  border-radius: 18px;
+  color:white;
+  font-size: 0.8rem;
+}
 .appointment {
   display: flex;
   flex-direction: row;
@@ -38,10 +45,16 @@
   width: 150px;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 15px;
   margin-bottom:10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.app-bg-color{
+  background-color: darkmagenta;
+  color:rgb(250, 242, 242);
+  border:1px solid darkmagenta;
+  box-shadow: 1px 2px 4px violet;
 }
 .appointment-title {
   display: flex;

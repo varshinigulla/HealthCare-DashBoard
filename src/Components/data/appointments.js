@@ -11,12 +11,14 @@ export const appointments = {
   ],
   details: [
     { 
+      id:1,
       title: "Dentist", 
       time: "09:00 AM - 11:00 AM",
       icon:`${process.env.PUBLIC_URL}/Assests/teeth.jpg`,
       name:"Dr.Cameron Williamson"
     },
     { 
+      id:2,
       title: "Physiotherapy", 
       time: "11:00 AM - 12:00 PM",
       icon:`${process.env.PUBLIC_URL}/Assests/hand.jpg`,
