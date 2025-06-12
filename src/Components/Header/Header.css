@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   gap: 25px;
-  margin-right: 31px;
+  margin-right: 33px;
   background-color:rgb(250, 248, 248);
   padding:30px 10px 0 379px;
   border-top-right-radius: 15px;
@@ -91,9 +91,9 @@
   }
   .icons {
     gap: 15px;
-    margin-left: 8px;
+    margin-left: 10px;
     background-color:rgb(250, 248, 248);
-    padding:35px 5px 0 330px;
+    padding:35px 5px 8px 315px;
     border-top-right-radius: 15px;
   }
   .user, .add-button {

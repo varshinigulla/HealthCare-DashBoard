@@ -22,14 +22,15 @@
 /* media queries laptop Styles */
 @media (max-width: 1024px) {
     .dashboard{
-        margin-top: -15px;
+        margin-top: -5x;
     }
     .health-details{
         max-width:430px;
     }
     .appointment-details{
-        max-width:390px;
+        max-width:375px;
         padding-bottom: 20px;
+        margin-left: -2px;
     }
 }
 
