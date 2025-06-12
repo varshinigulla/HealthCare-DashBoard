@@ -111,6 +111,9 @@
 
 /* media queries laptop Styles */
 @media (max-width: 1024px) {
+  .healthStatus{
+    margin:0 20px;
+  }
   .anatomy-img{
     height:320px;
     width:200px;
@@ -118,8 +121,35 @@
   .cards{
     max-width:120px;
   }
+  .rates{
+    width:50px;
+    margin-left: -70px;
+  }
+  .s-rate{
+    width:25px;
+    height:6px;
+    border-radius: 10px;
+    margin:0px 20px 5px;
+    background-color:rgb(194, 193, 193);
+  }
+  .rate{
+    display:flex;
+    align-items: start;
+    height:6px;
+    border-radius: 10px;
+    margin:0px 20px 5px;
+    margin-top: -11px;
+  }
   .health-status pre{
     padding-left: 50px;
+  }
+}
+
+/* media Quires tablet Styles */
+@media (max-width: 768px) {
+  .cards{
+    max-width:130px;
+    padding:10px;
   }
 }
 

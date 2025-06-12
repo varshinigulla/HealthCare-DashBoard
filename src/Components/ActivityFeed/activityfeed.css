@@ -1,8 +1,8 @@
 .activity-container {
   background-color: whitesmoke;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 5px;
-  margin:5px;
+  padding: 5px 10px;
+  margin:15px 5px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -24,6 +24,7 @@
 .bar-container {
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
 }
 .rate{
   display:flex;
@@ -42,7 +43,7 @@
   background-color:rgb(99, 252, 252);
 }
 .bar-label {
-  margin-top: 85px;
+  margin-top: 80px;
   font-size: 0.75rem;
   color: gray;
   padding:1px 5px;

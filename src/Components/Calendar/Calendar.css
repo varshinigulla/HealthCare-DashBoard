@@ -28,6 +28,7 @@
   font-size:0.9rem;
   color:gray;
   font-weight: 400;
+  cursor:default;
 }
 .slot-time{
   padding:3px 10px;
@@ -35,6 +36,7 @@
   border-radius: 18px;
   color:white;
   font-size: 0.8rem;
+  cursor:default;
 }
 .appointment {
   display: flex;
@@ -52,11 +54,13 @@
   margin-bottom:10px;
   background-color:rgb(238, 221, 252);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor:default;
 }
 .app-bg-color{
   background-color:rgb(117, 1, 211);
   color:white;
   border:1px solid rgb(117, 1, 211);
+  cursor:default;
 }
 .appointment-title {
   display: flex;

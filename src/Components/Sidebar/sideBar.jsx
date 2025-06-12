@@ -8,7 +8,7 @@ export const Sidebar = () => {
   const [links,setLink] =useState(1);
 
   return(
-    <aside>
+    <aside className="sidebar-container">
     <div className="sidebar">
       <h4>General</h4>
       <ul>

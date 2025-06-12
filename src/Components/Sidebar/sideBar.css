@@ -1,3 +1,8 @@
+.sidebar-container{
+    background-color: whitesmoke;
+    margin-top: -20px;
+    border-bottom-left-radius: 15px;
+}
 .sidebar h4{
     color:gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,7 +28,7 @@
     font-size: 1.3rem;
 }
 .setting{
-    padding-top: 90%;
+    padding-top: 100%;
 }
 
 /* media queries laptop Styles */
@@ -40,12 +45,17 @@
         font-size: 1.2rem;
     }
     .setting {
-        padding-top: 90%;
+        padding-top: 215px;
     }
 }
 
 /* media queries tablet Styles */
 @media (max-width: 768px) {
+    .sidebar-container{
+        background-color: white;
+        margin-top: 0;
+        border-bottom-left-radius: 0;
+    }
     .sidebar h4 {
         font-size: 1rem;
         padding-left: 15px;

@@ -5,6 +5,8 @@
     align-items: baseline;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-evenly;
+    margin-top: -20px;
+    border-bottom-right-radius: 15px;
 }
 .health-details{
     display:flex;
@@ -13,18 +15,21 @@
 .appointment-details{
     display:flex;
     flex-direction: column;
+    background-color: rgb(250, 248, 248);
+    padding:0 15px;
 }
 
 /* media queries laptop Styles */
 @media (max-width: 1024px) {
     .dashboard{
-        margin-top: 5px;
+        margin-top: -15px;
     }
     .health-details{
         max-width:430px;
     }
     .appointment-details{
-        max-width:400px;
+        max-width:390px;
+        padding-bottom: 20px;
     }
 }
 
@@ -35,6 +40,12 @@
         flex-direction:column;
         align-items: center;
         padding-top: 6px;
+        margin-top: 0;
+        border-bottom-right-radius:0;
+    }
+    .appointment-details{
+        background-color: white;
+        padding:0;
     }
 }
 
@@ -43,8 +54,7 @@
     .dashboard{
         display:flex;
         flex-direction:column;
-    }
-    .appointment-details{
-        margin-left:-100px;
+        margin-top: 0;
+        border-bottom-right-radius:0;
     }
 }
